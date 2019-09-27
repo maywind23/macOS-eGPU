@@ -40,7 +40,7 @@
 branch="master"
 warningOS="10.13.7"
 currentOS="10.13.6"
-gitPath="https://raw.githubusercontent.com/learex/macOS-eGPU/""$branch"
+gitPath="https://raw.githubusercontent.com/maywind23/macOS-eGPU/""$branch"
 scriptVersion="v1.6"
 debug=false
 
@@ -370,12 +370,12 @@ Parameters are optional. If none are provided, the script will self determine wh
 
 --- Example with parameters ---
 
-bash <(curl -s https://raw.githubusercontent.com/learex/macOS-eGPU/master/macOS-eGPU.sh) --install --nvidiaDriver 387.10.10.10.30.106
+bash <(curl -s https://raw.githubusercontent.com/maywind23/macOS-eGPU/master/macOS-eGPU.sh) --install --nvidiaDriver 387.10.10.10.30.106
 
 macos-egpu  --install --nvidiaDriver 387.10.10.10.30.106
 
 --- Issues ---
-Please visit https://github.com/learex/macOS-eGPU#problems
+Please visit https://github.com/maywind23/macOS-eGPU#problems
 EOF
 `
     echo "$printVariableTemp"
@@ -385,7 +385,7 @@ EOF
 function printShortHelp {
     printVariableTemp=`cat <<EOF
 
-bash <(curl -s https://raw.githubusercontent.com/learex/macOS-eGPU/master/macOS-eGPU.sh) [parameter]
+bash <(curl -s https://raw.githubusercontent.com/maywind23/macOS-eGPU/master/macOS-eGPU.sh) [parameter]
 parameter:
     --install | -i                  | --uninstall | -U
     --checkSystem | -C              | --checkSystemFull
@@ -2234,7 +2234,7 @@ function installNvidiaUnlockWranglerPatch {
 #   Subroutine K: Thunderbolt daemon ##############################################################################################################
 ##  Subroutine K1: Global variables
 thunderboltDaemonInstalled=false
-macOSeGPUdaemonPlistPath="/Library/LaunchDaemons/scp.learex.daemon-macOS-eGPU.plist"
+macOSeGPUdaemonPlistPath="/Library/LaunchDaemons/scp.maywind23.daemon-macOS-eGPU.plist"
 macOSeGPUDaemonPath="/usr/local/bin/daemon-macOS-eGPU"
 
 
